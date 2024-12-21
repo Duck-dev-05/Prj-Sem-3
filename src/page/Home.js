@@ -1,12 +1,13 @@
 import React from "react";
+import '../css/Homepage.css';
 
-const Home = () => {
+function HomePage() {
     return (
-        <div>
-            <h1>Welcome to James Thew Recipes Website</h1>
-            <p>Discover a world of delicous recipes and cooking tips</p>
+        <div className="homepage">
+            <h2>Welcome to James Thew's Recipe World</h2>
+            <p>Explore recipes,participate in contests, and learn cooking tips from James Thew</p>
         </div>
     );
-};
+}
 
-export default Home;
+export default HomePage;

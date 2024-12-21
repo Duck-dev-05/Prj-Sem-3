@@ -1,12 +1,17 @@
 import React from "react";
+import '../css/Contest.css';
 
-const Contests = () => {
+function Contests() {
     return (
-        <div>
-            <h1>Contests</h1>
-            <p>Participate in excting cooking contests and win prizes!</p>
+        <div className="contests">
+            <h2>Contests</h2>
+            <p>Participate in exciting cooking contests hosted by James Thew</p>
+            <ul>
+                <li>Contest 1: Sumbit your best dessert recipe!</li>
+                <li>Contest 2: Share your top cooking tip</li>
+            </ul>
         </div>
     );
-};
+}
 
 export default Contests;

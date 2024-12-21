@@ -1,16 +1,17 @@
 import React from "react";
+import '../css/FAQs.css';
 
-const FAQs = () => {
+function FAQ() {
     return (
-        <div>
-            <h1>FAQs</h1>
+        <div className="faq">
+            <h2>Frequently Asked Questions</h2>
             <ul>
-                <li>How to become a member?</li>
-                <li>What are the subscription charges?</li>
-                <li>Can non-members participate in contests?</li>
+            <li>How to become a member of this site? <p>Register on the Login/Register page.</p></li>
+            <li>Will there be any subscription charges? <p>Yes, $10/month or $100/year.</p></li>
+            <li>Can I participate in contests without being a member? <p>Yes, participation is open to all.</p></li>
             </ul>
         </div>
     );
-};
+}
 
-export default FAQs;
+export default FAQ;
