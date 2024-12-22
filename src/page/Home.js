@@ -1,32 +1,51 @@
 import React from "react";
-import "../css/Homepage.css";
+import '../css/Homepage.css';
 
 const Homepage = () => {
     return (
-        <div>
-            <div className="hero">
-                <h1>Cook with love</h1>
-            </div>
-            <div className="content">
-                <h2>Featured Recipes</h2>
-                <div className="recipe-card">
-                   <img src="../image/Pic1.jpg" alt=""/>
-                    <h3>Pizza</h3>
-                    <p>A classic Italian food</p>
-                </div>
-                <div className="recipe-card">
-                    <img src="../image/Pic2.jpg" alt="#"/>
-                    <h3>Chicken</h3>
-                    <p>Grilled chickens chunks</p>
-                </div>
-                <div className="recipe-card">
-                    <img src="../image/Pic3.jpg" alt="#"/>
-                    <h3>Vegetable Stir Fry</h3>
-                    <p>A quick and healthy dish with a mix colorful vegetables and soy sauce</p>
-                </div>
-            </div>
+        <div className="homepage">
+            <header className="homepage-header">
+                <h1>Welcome to James Thew's Kitchen</h1>
+            </header>
+            <main>
+                <section className="about">
+                    <h2>About James Thew</h2>
+                    <p>
+                        James Thew is a renowned chef 
+                    </p>
+                </section>
+
+                <section className="features">
+                    <h2>Explore Our Features</h2>
+                    <ul>
+                        <li>Access Free Recipes</li>
+                        <li>Join Exciting Cooking Contests</li>
+                        <li>Stay Updated with Announcements</li>
+                        <li>Share Your Feedback</li>
+                        <li>Browse FAQs</li>
+                    </ul>
+                </section>
+
+                <section className="subscription">
+                    <h2>Become a Member</h2>
+                    <p>Enjoy exclusive content and premium recipes by subscribing:</p>
+                    <ul>
+                        <li>Monthly Subscription: $10</li>
+                        <li>Yearly Subscription: $100</li>
+                    </ul>
+                    <button onClick={() => alert('Redicting to subscription page...')}>Subscribe Now</button>
+                </section>
+
+                <section className="contact">
+                    <h2>Contact Us</h2>
+                    <p>Have questions or feedback?Feel free to reach out!</p>
+                </section>
+            </main>
+            <footer className="homepage-footer">
+                <p>&copy; {new Date().getFullYear()}James Thew's Kitchen.All right reserved.</p>
+            </footer>
         </div>
     );
-}
+};
 
 export default Homepage;

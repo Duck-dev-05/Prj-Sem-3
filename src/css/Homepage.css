@@ -1,37 +1,64 @@
-.hero{
-    background-image: url("../image/Pic1.jpg");
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
-.hero h1{
-    font-size: 3em;
-}
-
-.content {
-    padding: 20px;
+.homepage{
     text-align: center;
+    color: #333;
 }
 
-.recipe-card{
-    display: inline-block;
-    width: 300px;
+.homepage-header{
+    background-color: #f4a261;
+    padding: 20px;
+    color: white;
+}
+
+.homepage-header h1 {
+    margin: 0;
+}
+
+.about, .features, .subscription, .contact {
     margin: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
+    padding: 20px;
     background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.recipe-card img{
+.about h2, .features h2, .subscription h2, .contact h2 {
+    color: #2a9d8f;
+}
+
+.features ul, .subscription ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li, .subscription li {
+    margin: 5px 0;
+}
+
+.subscription button {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscription button:hover {
+    background-color: #d45d43;
+}
+
+.homepage-footer {
+    background-color: #264653;
+    color: white;
+    padding: 10px;
+    position: fixed;
     width: 100%;
-}
-
-.recipe-card h3{
-    margin: 10px;
+    bottom: 0;
 }
