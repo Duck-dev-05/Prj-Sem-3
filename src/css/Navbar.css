@@ -2,13 +2,65 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    padding: 10px 20px;
+    background-color: #ff6347;
     color: white;
-    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar .links a {
-    color: white;
+.logo a {
     text-decoration: none;
-    margin: 0 1rem;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover{
+    color: #ffe4b5;
+}
+
+.auth-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.btn-primary{
+    background-color: white;
+    color: #ff6347;
+}
+
+.btn:hover{
+    background-color: #ffe4b5;
+    color: #ff6347;
+}
+
+.btn-primary:hover{
+    background-color: #ff6347;
+    color: white;
 }
