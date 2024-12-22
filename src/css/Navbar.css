@@ -1,66 +1,51 @@
-.navbar {
+.header{
+    background-color: #ff6243;
+    display: flex;
+    justify-content: space-between;     
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #ff6347;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo a {
-    text-decoration: none;
+.logo{
     color: white;
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: bold;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
+.navbar a{
     color: white;
-    transition: color 0.3s;
+    margin: 0 15px;
+    font-size: 16px;
 }
 
-.nav-links a:hover{
-    color: #ffe4b5;
+.navbar a:hover{
+    text-decoration: underline;
 }
 
-.auth-buttons{
-    display: flex;
-    gap: 10px;
-}
-
-.btn{
-    padding: 5px 10px;
-    text-decoration: none;
-    color: white;
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn{
+    margin-left: 10px;
+    padding: 5px 15px;
     border: 1px solid white;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-
-.btn-primary{
-    background-color: white;
-    color: #ff6347;
-}
-
-.btn:hover{
-    background-color: #ffe4b5;
-    color: #ff6347;
-}
-
-.btn-primary:hover{
-    background-color: #ff6347;
+    background-color: transparent;
     color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.auth-buttons .signup-btn{
+    background-color: white;
+    color: #ff6243;
+}
+
+.auth-buttons button:hover{
+    opacity: 0.8;
 }

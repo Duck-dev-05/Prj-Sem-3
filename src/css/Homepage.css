@@ -1,3 +1,37 @@
-.homepage{
-    padding: 2rem;
+.hero{
+    background-image: url("../image/Pic1.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1{
+    font-size: 3em;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe-card{
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.recipe-card img{
+    width: 100%;
+}
+
+.recipe-card h3{
+    margin: 10px;
 }
