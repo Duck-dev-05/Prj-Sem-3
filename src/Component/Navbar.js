@@ -7,7 +7,7 @@ function Navbar(){
             <div className="header-container">
                 <h1 className="logo">James Thew</h1>
                 <nav className="navbar">
-                    <a href="#recipes">Recipes</a>
+                   <a href="../page/FreeRecipes">Recipes</a>
                     <a href="#contest">Contest</a>
                     <a href="#announcements">Announcements</a>
                     <a href="#feedback">Feedback</a>
