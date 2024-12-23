@@ -7,14 +7,14 @@ function Navbar(){
             <div className="header-container">
                 <h1 className="logo">James Thew</h1>
                 <nav className="navbar">
-                   <a href="../page/FreeRecipes">Recipes</a>
+                    <a href="../page/FreeRecipes">Recipes</a>
                     <a href="#contest">Contest</a>
                     <a href="#announcements">Announcements</a>
                     <a href="#feedback">Feedback</a>
                     <a href="#FAQ">FAQ</a>
                 </nav>
                 <div className="auth-buttons">
-                    <button className="login-btn">Login</button>
+                    <button className="login-btn"><a href="../page/Login">Login</a></button>
                     <button className="signup-btn">Sign Up</button>
                 </div>
             </div>
