@@ -1,33 +1,32 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Component/Navbar";
-import Homepage from "./page/Home";
-import Login from "./page/Login";
-import FreeRecipes from "./page/FreeRecipes";
-import Contests from "./page/Contest";
-import Announcements from "./page/Announcements";
-import Feedback from "./page/Feedback";
-import FAQ from "./page/FAQs";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Component/Navbar';
 
-import './App.css';
+const App = () => {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/free-recipes" element={<FreeRecipes />} />
+        <Route path="/contests" element={<Contests />} />
+        <Route path="/announcements" element={<Announcements />} />
+        <Route path="/feedback" element={<Feedback />} />
+        <Route path="/faqs" element={<FAQs />} />
+      </Routes>
+    </Router>
+  );
+};
 
-function App() {
-    return (
-        <Router>
-            <div className="App">
-                <Navbar/>
-                <Routes>
-                <Route path="/" element={<Homepage />} />
-                <Route path="/login" element={<Login />} />
-                <Route path= "/" element={<FreeRecipes />} />
-                <Route path="/contests" element={<Contests />} />
-               <Route path="/announcements" element={<Announcements />} />
-               <Route path="/feedback" element={<Feedback />} />
-               <Route path="/faq" element={<FAQ />} />
-                </Routes>
-            </div>
-        </Router>
-    )
-}
+const Home = () => <div>Home Page</div>;
+const Login = () => <div>Login Page</div>;
+const SignUp = () => <div>Sign Up Page</div>;
+const FreeRecipes = () => <div>Free Recipes Page</div>;
+const Contests = () => <div>Contests Page</div>;
+const Announcements = () => <div>Announcements Page</div>;
+const Feedback = () => <div>Feedback Page</div>;
+const FAQs = () => <div>FAQs Page</div>;
 
 export default App;

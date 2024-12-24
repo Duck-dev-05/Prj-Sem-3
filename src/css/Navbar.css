@@ -1,29 +1,67 @@
+/* General Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.navbar a {
-    color:#fff;
-    margin: 0 10px;
+    padding: 1rem 2rem;
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .navbar-brand h1 {
+    margin: 0;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .navbar-menu li a {
     text-decoration: none;
-}
-
-.auth-buttons .login,
-.auth-buttons .signup {
-    background: none;
-    border: 1px solid #fff;
-    color: #fff;
-    margin-left: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.auth-buttons .signup{
-    background: #ff5722;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar-menu li:hover {
+    background-color: #e68900;
+  }
+  
+  /* Button Container */
+  .navbar-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Button Styles */
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
-}
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    background-color: white;
+    color: #ff9800;
+  }
+  
+  .signup-btn {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
