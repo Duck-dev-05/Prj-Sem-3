@@ -1,64 +1,152 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+/* App.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-}
-
-.homepage{
+    line-height: 1.6;
+  }
+  
+  .App {
     text-align: center;
-    color: #333;
-}
-
-.homepage-header{
-    background-color: #f4a261;
-    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
     color: white;
-}
-
-.homepage-header h1 {
-    margin: 0;
-}
-
-.about, .features, .subscription, .contact {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.about h2, .features h2, .subscription h2, .contact h2 {
-    color: #2a9d8f;
-}
-
-.features ul, .subscription ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.features li, .subscription li {
-    margin: 5px 0;
-}
-
-.subscription button {
-    background-color: #e76f51;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav a {
     color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('../image/Pic3.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero-buttons button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .hero-buttons button:hover {
+    background: #e64a19;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  
+  /* Featured Recipes */
+  .featured-recipes {
+    padding: 20px;
+  }
+  
+  .recipes-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .recipe-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .recipe-card h3 {
+    font-size: 1.2em;
+  }
+  
+  .recipe-card button {
+    background: #3f51b5;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .recipe-card button:hover {
+    background: #303f9f;
+  }
+  
+  /* Contests */
+  .contests {
+    padding: 20px;
+    background: #ffecb3;
+  }
+  
+  .contests button {
+    background: #fbc02d;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.subscription button:hover {
-    background-color: #d45d43;
-}
-
-.homepage-footer {
-    background-color: #264653;
+  }
+  
+  .contests button:hover {
+    background: #f9a825;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
     color: white;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links a,
+  .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover,
+  .social-media a:hover {
+    text-decoration: underline;
+  }
+  
