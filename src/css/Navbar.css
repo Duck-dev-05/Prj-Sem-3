@@ -1,51 +1,29 @@
-.header{
-    background-color: #ff6243;
-    display: flex;
-    justify-content: space-between;     
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.header-container{
-    width: 100%;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-.logo{
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
+.navbar a {
+    color:#fff;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-.navbar a{
-    color: white;
-    margin: 0 15px;
-    font-size: 16px;
-}
-
-.navbar a:hover{
-    text-decoration: underline;
-}
-
-.auth-buttons .login-btn,
-.auth-buttons .signup-btn{
+.auth-buttons .login,
+.auth-buttons .signup {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
     margin-left: 10px;
-    padding: 5px 15px;
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    border-radius: 3px;
+    padding: 5px 10px;
     cursor: pointer;
-    font-size: 14px;
 }
 
-.auth-buttons .signup-btn{
-    background-color: white;
-    color: #ff6243;
-}
-
-.auth-buttons button:hover{
-    opacity: 0.8;
+.auth-buttons .signup{
+    background: #ff5722;
+    border: none;
 }

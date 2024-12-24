@@ -1,25 +1,21 @@
 import React from "react";
-import "../css/Navbar.css";
+import '../css/Navbar.css';
 
-function Navbar(){
-    return (
-        <header className="header">
-            <div className="header-container">
-                <h1 className="logo">James Thew</h1>
-                <nav className="navbar">
-                    <a href="../page/FreeRecipes">Recipes</a>
-                    <a href="#contest">Contest</a>
-                    <a href="#announcements">Announcements</a>
-                    <a href="#feedback">Feedback</a>
-                    <a href="#FAQ">FAQ</a>
-                </nav>
-                <div className="auth-buttons">
-                    <button className="login-btn"><a href="../page/Login">Login</a></button>
-                    <button className="signup-btn">Sign Up</button>
-                </div>
-            </div>
-        </header>
-    );
+function Navbar (){
+    <header className="navbar">
+    <div className="logo">James Thew</div>
+    <nav>
+    <a href="/">Recipes</a>
+    <a href="/">Contest</a>
+    <a href="/">Announcements</a>
+    <a href="/">Feedback</a>
+    <a href="/">FAQs</a>
+    </nav>
+    <div className="auth-buttons">
+    <button className="login">Login</button>
+    <button className="signup">Sign Up</button>
+    </div>
+    </header>
 }
 
 export default Navbar;
