@@ -1,67 +1,66 @@
 /* General Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #ff9800;
-    color: white;
-  }
-  
-  .navbar-brand h1 {
-    margin: 0;
-  }
-  
-  .navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-menu li {
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  .navbar-menu li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .navbar-menu li:hover {
-    background-color: #e68900;
-  }
-  
-  /* Button Container */
-  .navbar-buttons {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  /* Button Styles */
-  .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-btn {
-    background-color: white;
-    color: #ff9800;
-  }
-  
-  .signup-btn {
-    background-color: #ff5722;
-    color: white;
-  }
-  
-  .btn:hover {
-    opacity: 0.9;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ff9800;
+  color: white;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-menu li:hover {
+  background-color: #e68900;
+}
+
+/* Button Container */
+.navbar-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: white;
+  color: #ff9800;
+}
+
+.signup-btn {
+  background-color: #ff5722;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

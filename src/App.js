@@ -9,6 +9,7 @@ import Contests from './page/Contest';
 import Announcements from './page/Announcements';
 import Feedback from './page/Feedback';
 import FAQs from './page/FAQs';
+import Footer from './Component/Footer';
 const App = () => {
   return (
     <Router>
@@ -23,7 +24,9 @@ const App = () => {
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/faqs" element={<FAQs />} />
       </Routes>
+      <Footer/>
     </Router>
+
   );
 };
 
