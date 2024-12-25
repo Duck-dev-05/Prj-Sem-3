@@ -1,43 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import '../css/Login.css';
 
-function LoginForm(){
-    const [email,setEmail] = useState("");
-    const [password,setPassword] = useState("");
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Email",email);
-        console.log("Password",password);
+const LoginPage = () => {
+    const handleLogin = (platform) =>{
+        alert(`Logging in with $(platform)`);
     };
 
     return (
-        <div className="login-form">
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="email">Email:</label>
-                <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                required/>
-
-                <label htmlFor="password">Password:</label>
-                <input 
-                type="password"
-                id="password"
-                value={password}
-                onChange={(e) =>setPassword(e.target.value)}
-                placeholder="Enter your password"
-                required/>
-
-                <button type="sumbit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="/">Register here</a></p>
+        <div className="login-container">
+            <div className="login-box">
+                <h2>Login Page</h2>
+                <form className="login-form">
+                    <input type="email" placeholder="Email" required/>
+                    <input type="password" placeholder="Password" required/>
+                    <button type="sumbit" className="login-button">
+                        Login
+                    </button>
+                </form>
+                <div className="social-login">
+                    <p>Or login with:</p>
+                    <div className="social-buttons">
+                        <button className="social-button google" onClick={() => handleLogin("Google")}>Google</button>
+                        <button className="social-button facebook" onClick={() => handleLogin("Facebook")}>Facebook</button>
+                        <button className="social-button twitter" onClick={() =>handleLogin("Twitter")}>Twitter</button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
-}
+};
 
-export default LoginForm;
+export default LoginPage;

@@ -9,11 +9,10 @@ import Contests from './page/Contest';
 import Announcements from './page/Announcements';
 import Feedback from './page/Feedback';
 import FAQs from './page/FAQs';
-
 const App = () => {
   return (
     <Router>
-      <Navbar />
+     <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
