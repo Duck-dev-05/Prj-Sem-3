@@ -1,6 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Component/Navbar';
+import Home from './page/Home';
+import Login from './page/Login';
+import SignUp from './page/Login';
+import FreeRecipes from './page/FreeRecipes';
+import Contests from './page/Contest';
+import Announcements from './page/Announcements';
+import Feedback from './page/Feedback';
+import FAQs from './page/FAQs';
 
 const App = () => {
   return (
@@ -20,13 +28,10 @@ const App = () => {
   );
 };
 
-const Home = () => <div>Home Page</div>;
-const Login = () => <div>Login Page</div>;
-const SignUp = () => <div>Sign Up Page</div>;
-const FreeRecipes = () => <div>Free Recipes Page</div>;
-const Contests = () => <div>Contests Page</div>;
-const Announcements = () => <div>Announcements Page</div>;
-const Feedback = () => <div>Feedback Page</div>;
-const FAQs = () => <div>FAQs Page</div>;
+
+
+
+
+
 
 export default App;
