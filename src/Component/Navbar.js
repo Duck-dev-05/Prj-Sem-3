@@ -1,26 +1,23 @@
-import React from 'react';
-import '../css/Navbar.css'; // Import your CSS for styling
+import React from "react";
+import { Link } from "react-router-dom";
+import '../css/Navbar.css';
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <a href="/" className="brand-link">JamesThew.com</a>
-      </div>
-      <ul className="navbar-menu">
-        <li><a href="/home">Home</a></li>
-        <li><a href="./page/FreeRecipes">Free Recipes</a></li>
-        <li><a href="/contests">Contests</a></li>
-        <li><a href="/announcements">Announcements</a></li>
-        <li><a href="/feedback">Feedback</a></li>
-        <li><a href="/faqs">FAQs</a></li>
-      </ul>
-      <div className="navbar-buttons">
-        <a href="/login" className="login-button">Login</a>
-        <a href="/signup" className="signup-button">Signup</a>
-      </div>
-    </nav>
+      <nav className='navbar'>
+          <h1>James Thew Recipes</h1>
+          <div className='links'>
+              <Link to ="/">Home</Link>
+              <Link to= "/free-recipes">Free Recipes</Link>
+              <Link to = "/contest">Contest</Link>
+              <Link to = "/announcements">Announcements</Link>
+              <Link to= "/feedback">Feedback</Link>
+              <Link to="/faq">FAQ</Link>
+              <Link to="/Login">Login/Register</Link>
+          </div>
+      </nav>
   );
-};
+}
 
 export default Navbar;
+
