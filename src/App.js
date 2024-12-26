@@ -1,39 +1,25 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Component/Navbar';
-import Home from './page/Home';
-import Login from './page/Login';
-import SignUp from './page/Login';
-import FreeRecipes from './page/FreeRecipes';
-import Contests from './page/Contest';
-import Announcements from './page/Announcements';
-import Feedback from './page/Feedback';
-import FAQs from './page/FAQs';
-import Footer from './Component/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import SignIn from './components/SignIn';
+import AboutUs from './components/AboutUs';   
+import Navbar from './components/Navbar';
+import ContactUs from './components/ContactUs';
+import './styles/App.css';
+
+
 const App = () => {
   return (
-    <Router>
+    <div>
       <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/" element={<FreeRecipes />} />
-        <Route path="/contests" element={<Contests />} />
-        <Route path="/announcements" element={<Announcements />} />
-        <Route path="/feedback" element={<Feedback />} />
-        <Route path="/faqs" element={<FAQs />} />
-      </Routes>
-      <Footer/>
-    </Router>
-
+      <AboutUs />
+      <ContactUs />
+    </div>
   );
 };
-
-
-
-
-
 
 
 export default App;
