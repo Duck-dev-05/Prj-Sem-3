@@ -1,28 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../css/Navbar.css';
+import '../css/Navbar.css'; // Import your CSS for styling
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <h1>JamesThew.com</h1>
+        <a href="/" className="brand-link">JamesThew.com</a>
       </div>
       <ul className="navbar-menu">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/free-recipes">Free Recipes</Link></li>
-        <li><Link to="/contests">Contests</Link></li>
-        <li><Link to="/announcements">Announcements</Link></li>
-        <li><Link to="/feedback">Feedback</Link></li>
-        <li><Link to="/faqs">FAQs</Link></li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="./page/FreeRecipes">Free Recipes</a></li>
+        <li><a href="/contests">Contests</a></li>
+        <li><a href="/announcements">Announcements</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/faqs">FAQs</a></li>
       </ul>
       <div className="navbar-buttons">
-        <Link to="/login">
-          <button className="btn login-btn">Login</button>
-        </Link>
-        <Link to="/signup">
-          <button className="btn signup-btn">Sign Up</button>
-        </Link>
+        <a href="/login" className="login-button">Login</a>
+        <a href="/signup" className="signup-button">Signup</a>
       </div>
     </nav>
   );

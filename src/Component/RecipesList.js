@@ -1,21 +1,27 @@
-import React, {useEffect,useState} from "react";
-import { fetchRecipes } from "../services/api";
+import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
-const RecipeList = () =>{
-    const [recipes,setRecipes] = useState([]);
+const recipesData = [
+  { id: 1, name: 'Spaghetti Bolognese', description: 'A classic Italian dish.' },
+  { id: 2, name: 'Chicken Curry', description: 'Spicy and delicious.' },
+  { id: 3, name: 'Vegetable Stir-fry', description: 'Healthy and quick.' },
+];
 
-    useEffect(() =>{
-        fetchRecipes()
-        .then((Response) => setRecipes(response.data))
-        .catch((error) => console.error(error));
-    },[]);
+const RecipeList = () => {
+    const [search, setSearch] = useState('');
 
+    const filteredRecipes = recipesData.filter((recipe) =>
+        recipe.name.toLowerCase().includes(search.toLowerCase())
+      );
+    
     return (
         <div>
-            <h1>Recipes</h1>
+            <input type="text" placeholder="Search recipes..." value={search} onChange={(e) => setSearch(e.target.value)}/>
             <ul>
-            {recipes.map((recipe) => (
-          <li key={recipe.id}>{recipe.name}</li>
+            {filteredRecipes.map((recipe) => (
+          <li key={recipe.id}>
+            <Link to={`/recipe/${recipe.id}`}>{recipe.name}</Link>
+          </li>
         ))}
             </ul>
         </div>
