@@ -1,0 +1,12 @@
+.faq{
+    padding: 2rem;
+}
+
+.faq ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq ul li{
+    margin: 1rem 0;
+}
