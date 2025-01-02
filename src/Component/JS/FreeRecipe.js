@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import RecipeCard from '../components/RecipeCard';
-import FeedbackForm from '../components/FeedbackForm';
-
+import FeedbackForm from './FeedbackForm';
+import RecipeCard from './RecipeCard';
 const FreeRecipes = () => {
   const [recipes] = useState([
     { id: 1, title: 'Spaghetti Bolognese', description: 'A classic Italian dish.' },
