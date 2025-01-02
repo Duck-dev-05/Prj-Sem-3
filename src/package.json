@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "esm": "^3.2.25",
+    "react-router-dom": "^7.0.2"
+  }
+}
