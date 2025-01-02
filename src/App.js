@@ -6,12 +6,14 @@ import AboutSection from './Component/JS/AoutSection';
 import Features from './Component/JS/Features';
 import CallToAction from './Component/JS/CalltoAction';
 import Footer from './Component/JS/Footer';
+import FreeRecipes from './Component/JS/FreeRecipe';
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Header />
       <AboutSection />
+      <FreeRecipes/>
       <Features />
       <CallToAction />
       <Footer />

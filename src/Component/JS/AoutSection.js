@@ -11,7 +11,7 @@ const AboutSection = () => {
           and engaging cooking classes, he has captivated food enthusiasts worldwide.
         </p>
       </div>
-      <img src="chef.jpg" alt="James Thew" />
+      <img src='../image/Pic5.jpg' alt='James Thew'></img>
     </section>
   );
 };
