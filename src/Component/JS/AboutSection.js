@@ -1,18 +1,20 @@
-import React from 'react';
-import '../CSS/AboutSection.css';
+import React from "react";
+import "../CSS/AboutSection";
 
 const AboutSection = () => {
   return (
-    <section className="about-section">
-      <div className="text">
-        <h2>About James Thew</h2>
-        <p>
-          James Thew is a renowned chef with years of experience working in top-tier hotels. Known for his innovative recipes
-          and engaging cooking classes, he has captivated food enthusiasts worldwide.
-        </p>
+    <div className="container">
+      <h1 className="title">About James Thew</h1>
+      <p className="description">
+        James Thew is a renowned chef with years of experience working in
+        top-tier hotels. Known for his innovative recipes and engaging cooking
+        classes, he has captivated food enthusiasts worldwide.
+      </p>
+      <div className="image-container">
+        <img src="./image/Pic5.jpg" alt="James Thew" className="image"/>
+        <span className="name">James Thew</span>
       </div>
-    <img src='./image/Pic5.jpg' alt='James Thew'></img>
-    </section>
+    </div>
   );
 };
 
