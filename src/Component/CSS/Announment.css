@@ -1,0 +1,37 @@
+.announcements-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .announcements-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .announcement-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .announcement-item h2 {
+    margin: 0 0 10px;
+  }
+  
+  .announcement-item p {
+    margin: 0 0 5px;
+  }
+  
+  .announcement-item small {
+    display: block;
+    color: #555;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
