@@ -1,99 +1,48 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* src/css/Login.css */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.login-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+.login-container h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
 }
 
-.login-box {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
+.login-form {
+  display: flex;
+  flex-direction: column;
 }
 
-.login-box h2 {
-    margin-bottom: 1rem;
-    color: #333;
+.login-input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
 }
 
-.login-form input{
-    display: block;
-    width: 100%;
-    padding: 0.8rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+.login-input:focus {
+  border-color: #4CAF50;
 }
 
-.login-button{
-    width: 100%;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 0.5rem;
+.login-btn {
+  padding: 14px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.social-login p {
-    margin: 1rem 0 0.5rem;
-    font-size: 0.9rem;
+.login-btn:hover {
+  background-color: #45a049;
 }
-
-.social-buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.social-button{
-    flex: 1;
-    padding: 0.8rem;
-    margin: 0 0.3rem;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
-
-.social-button.google {
-    background-color: #db4437;
-}
-
-.social-button.facebook {
-    background-color: #4267b2;
-}
-
-.social-button.twitter{
-    background-color: #1da1f2;
-}
-
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .social-buttons {
-      flex-direction: column;
-    }
-  
-    .social-button {
-      margin: 0.3rem 0;
-    }
-  }

@@ -1,21 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Login from './components/Login';
+import Register from './components/Register';
+import Profile from './components/Profile';
+import FAQ from './components/FAQ';
+import Announcements from './components/Announcements';
+import FreeRecipes from './components/FreeRecipes';
 import './App.css';
-import Header from './Component/JS/Header';
-import Navbar from './Component/JS/Navbar';
-import AboutSection from './Component/JS/AoutSection';
-import Features from './Component/JS/Features';
-import CallToAction from './Component/JS/CalltoAction';
-import Footer from './Component/JS/Footer';
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar />
-      <Header />
-      <AboutSection />
-      <Features />
-      <CallToAction />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/announcements" element={<Announcements />} />
+        <Route path="/freerecipes" element={<FreeRecipes />} />
+      </Routes>
+    </Router>
   );
 }
 

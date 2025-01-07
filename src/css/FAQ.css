@@ -1,5 +1,5 @@
-/* src/css/FreeRecipes.css */
-.freerecipes-container {
+/* src/css/FAQ.css */
+.faq-container {
     max-width: 700px;
     margin: 50px auto;
     padding: 30px;
@@ -8,22 +8,22 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .freerecipes-container h2 {
+  .faq-container h2 {
     text-align: center;
     font-size: 28px;
     color: #333;
   }
   
-  .recipe-item {
+  .faq-item {
     margin-bottom: 20px;
   }
   
-  .recipe-item h3 {
+  .faq-item h3 {
     font-size: 22px;
     color: #4CAF50;
   }
   
-  .recipe-item p {
+  .faq-item p {
     font-size: 18px;
     color: #555;
   }
